@@ -1,0 +1,22 @@
+class person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet (self):
+        print  ("Hi, I'm " + self.name + "." + " I'm " + str(self.age) + " years old.")
+
+    def change_name (self, new_name):
+        self.name = new_name
+
+    def change_age (self, new_age):
+        self.age = new_age
+
+
+p1 =person("Rex", 30)
+p1.change_name("Cleveland")
+p1.greet()
+
+p2 = person ("George", 29)
+p2.change_age(61)
+p2.greet()
