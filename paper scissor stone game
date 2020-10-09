@@ -1,0 +1,39 @@
+import random
+
+while True:
+    user_input = input("Sign scissor, stone or paper")
+
+    com_input = random.randint(0, 2)
+
+    if com_input == 0:
+        print ("AI: scissor.")
+    elif com_input == 1:
+        print ("AI: stone.")
+    elif com_input == 2:
+        print  ("AI: paper.")
+
+    if user_input == "scissor":
+        if com_input == 0:
+            print ("Even!")
+        elif com_input == 1:
+            print ("Lose!")
+        elif com_input == 2:
+            print ("Victory!")
+    elif user_input == "stone":
+        if com_input == 0:
+            print ("Victory!")
+        elif com_input == 1:
+            print ("Even!")
+        elif com_input == 2:
+            print ("Lose!")
+    elif user_input == "paper":
+        if com_input == 0:
+            print ("Lose!")
+        elif com_input == 1:
+            print ("Victory!")
+        elif com_input == 2:
+            print ("Even!")
+
+    else:
+        print ("Fause. Please sign scissor, stone or paper.")
+
